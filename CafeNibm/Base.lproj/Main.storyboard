@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FY2-sf-Qwg">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9wR-PW-jHa">
-                                <rect key="frame" x="20" y="312" width="374" height="218"/>
+                                <rect key="frame" x="20" y="259" width="374" height="218"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiZ-Vt-Mbf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-18-Y8B">
-                                <rect key="frame" x="159" y="186" width="96" height="96"/>
+                                <rect key="frame" x="159" y="133" width="96" height="96"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -108,7 +108,7 @@
                         <outlet property="password" destination="8BF-sR-bNS" id="IZ7-6m-mCr"/>
                         <segue destination="gs4-fB-hxH" kind="show" identifier="Home" id="RcV-cz-lHT"/>
                         <segue destination="xSr-SI-gMz" kind="show" identifier="Register" id="d97-br-JBc"/>
-                        <segue destination="M7n-RL-t4y" kind="show" id="IaX-3O-vPA"/>
+                        <segue destination="M7n-RL-t4y" kind="show" identifier="FogotMyPassword" id="IaX-3O-vPA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -120,10 +120,75 @@
             <objects>
                 <viewController id="M7n-RL-t4y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vY-mi-2pT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LYe-71-nv6">
+                                <rect key="frame" x="20" y="328.66666666666669" width="374" height="79"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-9S-g3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAA-R3-wse">
+                                        <rect key="frame" x="0.0" y="49" width="374" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fogot My Password">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfF-Qe-tZY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-tZ-2m9">
+                                <rect key="frame" x="159" y="202.66666666666666" width="96" height="95.999999999999972"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="centerY" secondItem="5vY-mi-2pT" secondAttribute="centerY" id="0S3-Z6-qp7"/>
+                            <constraint firstItem="8Wr-rm-NG2" firstAttribute="trailing" secondItem="LYe-71-nv6" secondAttribute="trailing" constant="20" id="8bC-Bi-6eV"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="centerX" secondItem="5vY-mi-2pT" secondAttribute="centerX" id="DMX-dc-bU4"/>
+                            <constraint firstItem="c7A-tZ-2m9" firstAttribute="centerX" secondItem="5vY-mi-2pT" secondAttribute="centerX" multiplier="0.5" id="EBo-0c-qNs"/>
+                            <constraint firstItem="c7A-tZ-2m9" firstAttribute="centerX" secondItem="5vY-mi-2pT" secondAttribute="centerX" id="EuT-fc-syx"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="centerY" secondItem="5vY-mi-2pT" secondAttribute="centerY" id="H40-Pa-Xyf"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="top" secondItem="c7A-tZ-2m9" secondAttribute="bottom" constant="30" id="QHI-s8-dTW"/>
+                            <constraint firstItem="c7A-tZ-2m9" firstAttribute="centerY" secondItem="5vY-mi-2pT" secondAttribute="centerY" id="eNh-dt-BgQ"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="leading" secondItem="8Wr-rm-NG2" secondAttribute="leading" constant="20" id="i82-l7-0CM"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="leading" secondItem="8Wr-rm-NG2" secondAttribute="centerX" constant="20" id="oC8-Ta-T4X"/>
+                            <constraint firstItem="LYe-71-nv6" firstAttribute="centerX" secondItem="5vY-mi-2pT" secondAttribute="centerX" id="ovo-Lp-L6f"/>
+                            <constraint firstItem="8Wr-rm-NG2" firstAttribute="trailing" secondItem="LYe-71-nv6" secondAttribute="trailing" constant="20" id="xQf-tS-zyz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Wr-rm-NG2"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8bC-Bi-6eV"/>
+                                <exclude reference="EBo-0c-qNs"/>
+                                <exclude reference="eNh-dt-BgQ"/>
+                                <exclude reference="0S3-Z6-qp7"/>
+                                <exclude reference="DMX-dc-bU4"/>
+                                <exclude reference="oC8-Ta-T4X"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="8bC-Bi-6eV"/>
+                                <exclude reference="xQf-tS-zyz"/>
+                                <include reference="EBo-0c-qNs"/>
+                                <exclude reference="EuT-fc-syx"/>
+                                <include reference="eNh-dt-BgQ"/>
+                                <include reference="0S3-Z6-qp7"/>
+                                <include reference="DMX-dc-bU4"/>
+                                <exclude reference="H40-Pa-Xyf"/>
+                                <exclude reference="QHI-s8-dTW"/>
+                                <exclude reference="i82-l7-0CM"/>
+                                <include reference="oC8-Ta-T4X"/>
+                                <exclude reference="ovo-Lp-L6f"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Fogot My Password" id="K1o-r4-3hX"/>
                 </viewController>
@@ -134,16 +199,16 @@
         <!--Register-->
         <scene sceneID="bCX-UM-ARP">
             <objects>
-                <viewController id="xSr-SI-gMz" sceneMemberID="viewController">
+                <viewController id="xSr-SI-gMz" customClass="RegisterViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4o-FP-1Ln">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="xpb-pD-AgG">
-                                <rect key="frame" x="159" y="184" width="96" height="96"/>
+                                <rect key="frame" x="159" y="131" width="96" height="96"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SWZ-dD-48C">
-                                <rect key="frame" x="20" y="310" width="374" height="222"/>
+                                <rect key="frame" x="20" y="257" width="374" height="222"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-hD-rB1">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -169,6 +234,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6g-ln-U6k"/>
+                                            <action selector="onRegister:" destination="xSr-SI-gMz" eventType="touchUpInside" id="Ods-N1-Czx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anw-bU-GTP">
@@ -178,6 +244,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="onLogin:" destination="xSr-SI-gMz" eventType="touchUpInside" id="04u-vB-2RD"/>
                                             <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfm-TS-8fy"/>
                                         </connections>
                                     </button>
@@ -227,7 +294,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="nkw-Tu-hJe"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="sxg-as-V6B"/>
+                        <outlet property="email" destination="Z1h-hD-rB1" id="FBo-e2-DOJ"/>
+                        <outlet property="password" destination="Gaf-cb-XvD" id="JdR-tJ-Ghz"/>
+                        <outlet property="phoneNumber" destination="Z7u-gY-Ugc" id="pEw-xS-4uA"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Login" id="sxg-as-V6B"/>
+                        <segue destination="gs4-fB-hxH" kind="show" identifier="Home" id="Xir-II-rC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxq-TZ-SIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -239,7 +310,7 @@
             <objects>
                 <viewController id="gs4-fB-hxH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YnQ-Vd-eM3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQx-hh-bBU">
@@ -263,7 +334,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FY2-sf-Qwg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LgB-8R-qrX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -277,7 +348,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sxg-as-V6B"/>
+        <segue reference="RcV-cz-lHT"/>
+        <segue reference="gf8-jv-4pB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icons8-kitchen-room-96" width="96" height="96"/>
