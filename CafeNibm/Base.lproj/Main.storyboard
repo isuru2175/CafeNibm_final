@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9wR-PW-jHa">
-                                <rect key="frame" x="20" y="259" width="374" height="218"/>
+                                <rect key="frame" x="20" y="249" width="374" height="218"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiZ-Vt-Mbf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -52,11 +52,14 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Je-BZ-pA5">
                                         <rect key="frame" x="0.0" y="188" width="374" height="30"/>
                                         <state key="normal" title="Forgot Password ?"/>
+                                        <connections>
+                                            <action selector="onForgot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSn-cs-071"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-18-Y8B">
-                                <rect key="frame" x="159" y="133" width="96" height="96"/>
+                                <rect key="frame" x="159" y="123" width="96" height="96"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -118,13 +121,13 @@
         <!--Fogot My Password-->
         <scene sceneID="PQL-OY-7k9">
             <objects>
-                <viewController id="M7n-RL-t4y" sceneMemberID="viewController">
+                <viewController id="M7n-RL-t4y" customClass="ForgotViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vY-mi-2pT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LYe-71-nv6">
-                                <rect key="frame" x="20" y="328.66666666666669" width="374" height="79"/>
+                                <rect key="frame" x="20" y="318.66666666666669" width="374" height="79"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-9S-g3E">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -138,13 +141,14 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="onForgot:" destination="M7n-RL-t4y" eventType="touchUpInside" id="pfw-es-bk9"/>
                                             <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfF-Qe-tZY"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-tZ-2m9">
-                                <rect key="frame" x="159" y="202.66666666666666" width="96" height="95.999999999999972"/>
+                                <rect key="frame" x="159" y="192.66666666666666" width="96" height="95.999999999999972"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -191,6 +195,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Fogot My Password" id="K1o-r4-3hX"/>
+                    <connections>
+                        <outlet property="email" destination="Zhh-9S-g3E" id="IZ3-r7-0DF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGe-PX-oms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,14 +208,14 @@
             <objects>
                 <viewController id="xSr-SI-gMz" customClass="RegisterViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4o-FP-1Ln">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-kitchen-room-96" translatesAutoresizingMaskIntoConstraints="NO" id="xpb-pD-AgG">
-                                <rect key="frame" x="159" y="131" width="96" height="96"/>
+                                <rect key="frame" x="159" y="121" width="96" height="96"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SWZ-dD-48C">
-                                <rect key="frame" x="20" y="257" width="374" height="222"/>
+                                <rect key="frame" x="20" y="247" width="374" height="222"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-hD-rB1">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -310,7 +317,7 @@
             <objects>
                 <viewController id="gs4-fB-hxH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YnQ-Vd-eM3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQx-hh-bBU">
@@ -348,8 +355,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="d97-br-JBc"/>
         <segue reference="RcV-cz-lHT"/>
-        <segue reference="gf8-jv-4pB"/>
+        <segue reference="sxg-as-V6B"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icons8-kitchen-room-96" width="96" height="96"/>

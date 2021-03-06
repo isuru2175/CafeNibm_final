@@ -62,5 +62,9 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func onForgot(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "FogotMyPassword", sender: self)
+    }
+    
 }
 

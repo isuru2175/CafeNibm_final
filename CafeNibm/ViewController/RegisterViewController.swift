@@ -23,6 +23,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func onRegister(_ sender: UIButton) {
+        let phoneNo=phoneNumber.text;
         if let email = email.text, let password = password.text{
         
         auth.createUser(withEmail: email, password: password) { authResult, error in
@@ -32,12 +33,16 @@ class RegisterViewController: UIViewController {
             }
             else
             {
+//                print("uid \(authResult!.user.uid) email \(email) phoneNo \(phoneNo)")
+                
                  let ref = Database.database().reference()
-                ref.childByAutoId().setValue(["phoneNumber": "5545458545","email":email])
-         
-//                let user = self.auth.currentUser
-//                var  alert = UIAlertController(title: "user", message: user?.uid, preferredStyle: .alert)
-//                          self.present(alert, animated: true)
+                let userid=authResult!.user.uid
+                ref.child("users/"+userid).setValue(["uid":userid,
+                                             "phoneNo":phoneNo,"email":email])
+                
+                //                let user = self.auth.currentUser
+                //                var  alert = UIAlertController(title: "user", message: user?.uid, preferredStyle: .alert)
+                //                          self.present(alert, animated: true),phoneNumber
 
                 
                 self.performSegue(withIdentifier: "Home", sender: self)
@@ -48,7 +53,8 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func onLogin(_ sender: UIButton) {
-         self.performSegue(withIdentifier: "Login", sender: self)
+        
+       self.performSegue(withIdentifier: "Login", sender: self)
     }
     /*
      @IBAction func onRegister(_ sender: UIButton) {
