@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 //        })
        if let email = email.text, let password = password.text
        {
-           Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+           auth.signIn(withEmail: email, password: password) { authResult, error in
              
                if let errr=error
                {

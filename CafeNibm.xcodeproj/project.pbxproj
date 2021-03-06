@@ -19,6 +19,8 @@
 		D352A13725F35DC300CDCA5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D352A13625F35DC300CDCA5F /* GoogleService-Info.plist */; };
 		D352A13925F38D4300CDCA5F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A13825F38D4300CDCA5F /* RegisterViewController.swift */; };
 		D352A13C25F3C3FD00CDCA5F /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A13B25F3C3FD00CDCA5F /* ForgotViewController.swift */; };
+		D352A14025F4005400CDCA5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A13F25F4005400CDCA5F /* HomeViewController.swift */; };
+		D352A14225F4027B00CDCA5F /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A14125F4027B00CDCA5F /* ProductsTableViewCell.swift */; };
 		D500BEDB2BED0EA65B161B07 /* Pods_CafeNibm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB83F18FA74F6D1B7F924EAE /* Pods_CafeNibm.framework */; };
 		F7E17CB85E15A1AE374F8BC4 /* Pods_CafeNibm_CafeNibmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E80ACCB076ECCC0E8EE657 /* Pods_CafeNibm_CafeNibmUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		D352A13625F35DC300CDCA5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D352A13825F38D4300CDCA5F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D352A13B25F3C3FD00CDCA5F /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		D352A13F25F4005400CDCA5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D352A14125F4027B00CDCA5F /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
 		E18C8277D816DAD2BFDEC22A /* Pods-CafeNibmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibmTests.release.xcconfig"; path = "Target Support Files/Pods-CafeNibmTests/Pods-CafeNibmTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB83F18FA74F6D1B7F924EAE /* Pods_CafeNibm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNibm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3402108D7EAE533712915 /* Pods-CafeNibmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibmTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeNibmTests/Pods-CafeNibmTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 			children = (
 				D352A13825F38D4300CDCA5F /* RegisterViewController.swift */,
 				D352A13B25F3C3FD00CDCA5F /* ForgotViewController.swift */,
+				D352A13F25F4005400CDCA5F /* HomeViewController.swift */,
+				D352A14125F4027B00CDCA5F /* ProductsTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -427,9 +433,11 @@
 			files = (
 				D352A10B25F3476200CDCA5F /* ViewController.swift in Sources */,
 				D352A10725F3476200CDCA5F /* AppDelegate.swift in Sources */,
+				D352A14225F4027B00CDCA5F /* ProductsTableViewCell.swift in Sources */,
 				D352A10925F3476200CDCA5F /* SceneDelegate.swift in Sources */,
 				D352A13C25F3C3FD00CDCA5F /* ForgotViewController.swift in Sources */,
 				D352A13925F38D4300CDCA5F /* RegisterViewController.swift in Sources */,
+				D352A14025F4005400CDCA5F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
