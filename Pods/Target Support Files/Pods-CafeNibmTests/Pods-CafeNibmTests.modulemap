@@ -1,0 +1,6 @@
+framework module Pods_CafeNibmTests {
+  umbrella header "Pods-CafeNibmTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

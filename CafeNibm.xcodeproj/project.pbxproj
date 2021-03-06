@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125776E0977BEEA19E5AC9D8 /* Pods_CafeNibmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6AF74EE8214DCFCFBBB939 /* Pods_CafeNibmTests.framework */; };
 		D352A10725F3476200CDCA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A10625F3476200CDCA5F /* AppDelegate.swift */; };
 		D352A10925F3476200CDCA5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A10825F3476200CDCA5F /* SceneDelegate.swift */; };
 		D352A10B25F3476200CDCA5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A10A25F3476200CDCA5F /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 		D352A11325F3476300CDCA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D352A11125F3476300CDCA5F /* LaunchScreen.storyboard */; };
 		D352A11E25F3476300CDCA5F /* CafeNibmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A11D25F3476300CDCA5F /* CafeNibmTests.swift */; };
 		D352A12925F3476300CDCA5F /* CafeNibmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352A12825F3476300CDCA5F /* CafeNibmUITests.swift */; };
+		D352A13725F35DC300CDCA5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D352A13625F35DC300CDCA5F /* GoogleService-Info.plist */; };
+		D500BEDB2BED0EA65B161B07 /* Pods_CafeNibm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB83F18FA74F6D1B7F924EAE /* Pods_CafeNibm.framework */; };
+		F7E17CB85E15A1AE374F8BC4 /* Pods_CafeNibm_CafeNibmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E80ACCB076ECCC0E8EE657 /* Pods_CafeNibm_CafeNibmUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B6A8EDF5DA6D56FF4B124B /* Pods-CafeNibm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibm.release.xcconfig"; path = "Target Support Files/Pods-CafeNibm/Pods-CafeNibm.release.xcconfig"; sourceTree = "<group>"; };
+		73E80ACCB076ECCC0E8EE657 /* Pods_CafeNibm_CafeNibmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNibm_CafeNibmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F8BA01698B61F09D486843 /* Pods-CafeNibm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibm.debug.xcconfig"; path = "Target Support Files/Pods-CafeNibm/Pods-CafeNibm.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6AF74EE8214DCFCFBBB939 /* Pods_CafeNibmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNibmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1D0F09DC64830148154304 /* Pods-CafeNibm-CafeNibmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibm-CafeNibmUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeNibm-CafeNibmUITests/Pods-CafeNibm-CafeNibmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDC23E85C92EE06623138AC0 /* Pods-CafeNibm-CafeNibmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibm-CafeNibmUITests.release.xcconfig"; path = "Target Support Files/Pods-CafeNibm-CafeNibmUITests/Pods-CafeNibm-CafeNibmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D352A10325F3476200CDCA5F /* CafeNibm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeNibm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D352A10625F3476200CDCA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D352A10825F3476200CDCA5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		D352A12425F3476300CDCA5F /* CafeNibmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeNibmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D352A12825F3476300CDCA5F /* CafeNibmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeNibmUITests.swift; sourceTree = "<group>"; };
 		D352A12A25F3476300CDCA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D352A13625F35DC300CDCA5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E18C8277D816DAD2BFDEC22A /* Pods-CafeNibmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibmTests.release.xcconfig"; path = "Target Support Files/Pods-CafeNibmTests/Pods-CafeNibmTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB83F18FA74F6D1B7F924EAE /* Pods_CafeNibm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNibm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E3402108D7EAE533712915 /* Pods-CafeNibmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNibmTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeNibmTests/Pods-CafeNibmTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D500BEDB2BED0EA65B161B07 /* Pods_CafeNibm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125776E0977BEEA19E5AC9D8 /* Pods_CafeNibmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E17CB85E15A1AE374F8BC4 /* Pods_CafeNibm_CafeNibmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C77C16421949AFDD4C5F70C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99F8BA01698B61F09D486843 /* Pods-CafeNibm.debug.xcconfig */,
+				17B6A8EDF5DA6D56FF4B124B /* Pods-CafeNibm.release.xcconfig */,
+				AA1D0F09DC64830148154304 /* Pods-CafeNibm-CafeNibmUITests.debug.xcconfig */,
+				CDC23E85C92EE06623138AC0 /* Pods-CafeNibm-CafeNibmUITests.release.xcconfig */,
+				F5E3402108D7EAE533712915 /* Pods-CafeNibmTests.debug.xcconfig */,
+				E18C8277D816DAD2BFDEC22A /* Pods-CafeNibmTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D352A0FA25F3476100CDCA5F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				D352A11C25F3476300CDCA5F /* CafeNibmTests */,
 				D352A12725F3476300CDCA5F /* CafeNibmUITests */,
 				D352A10425F3476200CDCA5F /* Products */,
+				C77C16421949AFDD4C5F70C8 /* Pods */,
+				FDE0CF769153040A75D35F27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +132,7 @@
 		D352A10525F3476200CDCA5F /* CafeNibm */ = {
 			isa = PBXGroup;
 			children = (
+				D352A13625F35DC300CDCA5F /* GoogleService-Info.plist */,
 				D352A10625F3476200CDCA5F /* AppDelegate.swift */,
 				D352A10825F3476200CDCA5F /* SceneDelegate.swift */,
 				D352A10A25F3476200CDCA5F /* ViewController.swift */,
@@ -128,6 +162,16 @@
 			path = CafeNibmUITests;
 			sourceTree = "<group>";
 		};
+		FDE0CF769153040A75D35F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB83F18FA74F6D1B7F924EAE /* Pods_CafeNibm.framework */,
+				73E80ACCB076ECCC0E8EE657 /* Pods_CafeNibm_CafeNibmUITests.framework */,
+				9B6AF74EE8214DCFCFBBB939 /* Pods_CafeNibmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D352A12D25F3476300CDCA5F /* Build configuration list for PBXNativeTarget "CafeNibm" */;
 			buildPhases = (
+				6714C268715290FE07CC342A /* [CP] Check Pods Manifest.lock */,
 				D352A0FF25F3476200CDCA5F /* Sources */,
 				D352A10025F3476200CDCA5F /* Frameworks */,
 				D352A10125F3476200CDCA5F /* Resources */,
+				98FA2838D574D35EA58596EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D352A13025F3476300CDCA5F /* Build configuration list for PBXNativeTarget "CafeNibmTests" */;
 			buildPhases = (
+				52DC076699F54B09A7A9EAB0 /* [CP] Check Pods Manifest.lock */,
 				D352A11525F3476300CDCA5F /* Sources */,
 				D352A11625F3476300CDCA5F /* Frameworks */,
 				D352A11725F3476300CDCA5F /* Resources */,
@@ -170,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D352A13325F3476300CDCA5F /* Build configuration list for PBXNativeTarget "CafeNibmUITests" */;
 			buildPhases = (
+				CB93DDBC2E07EFA84410C7C1 /* [CP] Check Pods Manifest.lock */,
 				D352A12025F3476300CDCA5F /* Sources */,
 				D352A12125F3476300CDCA5F /* Frameworks */,
 				D352A12225F3476300CDCA5F /* Resources */,
+				A7401FFE07EA7B15EB9A7233 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D352A11325F3476300CDCA5F /* LaunchScreen.storyboard in Resources */,
+				D352A13725F35DC300CDCA5F /* GoogleService-Info.plist in Resources */,
 				D352A11025F3476300CDCA5F /* Assets.xcassets in Resources */,
 				D352A10E25F3476200CDCA5F /* Main.storyboard in Resources */,
 			);
@@ -253,6 +303,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52DC076699F54B09A7A9EAB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeNibmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6714C268715290FE07CC342A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeNibm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98FA2838D574D35EA58596EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNibm/Pods-CafeNibm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNibm/Pods-CafeNibm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeNibm/Pods-CafeNibm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7401FFE07EA7B15EB9A7233 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNibm-CafeNibmUITests/Pods-CafeNibm-CafeNibmUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNibm-CafeNibmUITests/Pods-CafeNibm-CafeNibmUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeNibm-CafeNibmUITests/Pods-CafeNibm-CafeNibmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB93DDBC2E07EFA84410C7C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeNibm-CafeNibmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D352A0FF25F3476200CDCA5F /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		D352A12E25F3476300CDCA5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F8BA01698B61F09D486843 /* Pods-CafeNibm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +603,7 @@
 		};
 		D352A12F25F3476300CDCA5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B6A8EDF5DA6D56FF4B124B /* Pods-CafeNibm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +621,7 @@
 		};
 		D352A13125F3476300CDCA5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E3402108D7EAE533712915 /* Pods-CafeNibmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +643,7 @@
 		};
 		D352A13225F3476300CDCA5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18C8277D816DAD2BFDEC22A /* Pods-CafeNibmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +665,7 @@
 		};
 		D352A13425F3476300CDCA5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1D0F09DC64830148154304 /* Pods-CafeNibm-CafeNibmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +685,7 @@
 		};
 		D352A13525F3476300CDCA5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC23E85C92EE06623138AC0 /* Pods-CafeNibm-CafeNibmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
