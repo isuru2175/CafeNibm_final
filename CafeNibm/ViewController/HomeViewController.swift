@@ -117,7 +117,16 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
        
     }
 
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          let next = (storyboard?.instantiateViewController(withIdentifier: "ProductViewController") as? ProductViewController)!
+              
+              self.navigationController?.pushViewController(next, animated: true)
+        let foo = self.foods[indexPath.row]
+              next.name = foo.foodName
+              next.productprice = String( foo.price )
+              next.discrip = foods[indexPath.row].discription
+              next.foodurl = foods[indexPath.row].photoURL
+    }
 
     /*
     // MARK: - Navigation

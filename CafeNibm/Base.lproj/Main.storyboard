@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGe-PX-oms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="1055"/>
+            <point key="canvasLocation" x="507" y="1134"/>
         </scene>
         <!--Register-->
         <scene sceneID="bCX-UM-ARP">
@@ -423,6 +423,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcY-x4-YX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2234.7826086956525" y="738.58695652173924"/>
+        </scene>
+        <!--Product View-->
+        <scene sceneID="hYS-d8-YQg">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" id="sVk-1a-8kJ" customClass="ProductViewController" customModule="CafeNibm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="258-YJ-bEi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyb-72-ACR">
+                                <rect key="frame" x="147.33333333333334" y="20" width="119.33333333333334" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-ae-eIL">
+                                <rect key="frame" x="164.33333333333334" y="227" width="85.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Myr-ub-qFa">
+                                <rect key="frame" x="87" y="77.666666666666686" width="240" height="121.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs 1500.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uto-ml-7v4">
+                                <rect key="frame" x="164" y="262" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hcW-ae-eIL" firstAttribute="centerX" secondItem="258-YJ-bEi" secondAttribute="centerX" id="DnJ-NF-wFY"/>
+                            <constraint firstItem="qyb-72-ACR" firstAttribute="top" secondItem="J0X-hh-2mi" secondAttribute="top" constant="20" id="Ne8-xI-aU1"/>
+                            <constraint firstItem="hcW-ae-eIL" firstAttribute="top" secondItem="Myr-ub-qFa" secondAttribute="bottom" constant="28" id="aDu-rD-XIS"/>
+                            <constraint firstItem="qyb-72-ACR" firstAttribute="centerX" secondItem="258-YJ-bEi" secondAttribute="centerX" id="bav-2k-QGN"/>
+                            <constraint firstItem="Myr-ub-qFa" firstAttribute="centerX" secondItem="258-YJ-bEi" secondAttribute="centerX" id="hYk-6Z-a0I"/>
+                            <constraint firstItem="Myr-ub-qFa" firstAttribute="leading" secondItem="J0X-hh-2mi" secondAttribute="leading" constant="87" id="haY-1I-roj"/>
+                            <constraint firstItem="uto-ml-7v4" firstAttribute="top" secondItem="hcW-ae-eIL" secondAttribute="bottom" constant="14" id="hk4-x2-FlG"/>
+                            <constraint firstItem="Myr-ub-qFa" firstAttribute="top" secondItem="qyb-72-ACR" secondAttribute="bottom" constant="30" id="mzf-8S-fuH"/>
+                            <constraint firstItem="J0X-hh-2mi" firstAttribute="bottom" secondItem="Myr-ub-qFa" secondAttribute="bottom" constant="537" id="nx6-q4-6pE"/>
+                            <constraint firstItem="uto-ml-7v4" firstAttribute="centerX" secondItem="258-YJ-bEi" secondAttribute="centerX" id="xQP-HK-k2c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J0X-hh-2mi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product View" id="HcK-cl-1OE"/>
+                    <connections>
+                        <outlet property="desc" destination="hcW-ae-eIL" id="1Gw-UP-dg1"/>
+                        <outlet property="description" destination="hcW-ae-eIL" id="I4Z-Dw-xb2"/>
+                        <outlet property="foodName" destination="qyb-72-ACR" id="Odr-RS-X58"/>
+                        <outlet property="imageView" destination="Myr-ub-qFa" id="kwM-xO-22f"/>
+                        <outlet property="price" destination="uto-ml-7v4" id="5Sl-wT-LtE"/>
+                        <outlet property="priceVew" destination="uto-ml-7v4" id="agp-yJ-tfL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcU-HZ-bHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="905"/>
         </scene>
         <!--Home-->
         <scene sceneID="ZhS-L4-00n">
