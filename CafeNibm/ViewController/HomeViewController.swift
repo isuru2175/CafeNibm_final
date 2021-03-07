@@ -13,9 +13,7 @@ import FirebaseStorage
 
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    let foodItems = ["BBQ","kottu","rice","submarin"]
-    let foodDesc = ["10% discount","Free Coke","Free Garlic Bread","30% discount"]
-    let Foodprice = ["350.00", "450.00", "950.00", "280.00"]
+
     
     
     @IBOutlet weak var tableView: UITableView!
