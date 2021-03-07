@@ -340,6 +340,10 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:2uy-aV-I7k:image" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-aV-I7k">
                                                             <rect key="frame" x="8" y="8" width="92" height="82"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="82" id="DtW-7m-o6O"/>
+                                                                <constraint firstAttribute="width" constant="92" id="lQ8-T6-yg2"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="V1n-Tw-Z3w">
                                                             <rect key="frame" x="120" y="8" width="214" height="82"/>

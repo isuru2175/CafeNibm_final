@@ -40,6 +40,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 let id = placeDict["id"] as! Int
                 let photoURL = placeDict["photoURL"] as! String
                 let price = placeDict["price"] as! Float
+                
                 let food = CafeNibm.Foods(Name:foodName,discription: discription,price: price,discount: discount,id: id,photourl: photoURL)
                                    
                                    self.foods.append(food)
@@ -86,7 +87,27 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
 
         cell.lblFoodName.text = self.foods[indexPath.row].foodName
-        cell.FoodItemImage.image = UIImage(named: foodItems[2])
+          let storage = Storage.storage()
+          let storageRef = storage.reference()
+          
+          let path = self.foods[indexPath.row].photoURL
+          
+         
+          let formattedString = path.replacingOccurrences(of: " ", with: "")
+          let islandRef = storageRef.child(formattedString)
+          
+          islandRef.getData(maxSize: 1 * 250 * 250) { data, error in
+              if error != nil {
+             print("error")
+            } else {
+              // Data for "images/island.jpg" is returned
+              let image = UIImage(data: data!)
+              cell.FoodItemImage.image = image
+              
+              
+            }
+          }
+//        cell.FoodItemImage.image = UIImage(named: foodItems[2])
 
         cell.lblFoofDescription.text = self.foods[indexPath.row].discription
         cell.lblPrice.text = ( "Rs." + String(self.foods[indexPath.row].price))
